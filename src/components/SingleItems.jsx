@@ -58,20 +58,22 @@ export default function SingleItem() {
   };
 
   return (
-    <div className="singleItem">
-      <img src={product.image} alt={product.title} />
-      <h2>{product.title}</h2>
-      <p>Description: {product.description}</p>
-      <p>Price: ${product.price.toFixed(2)}</p>
-      <label htmlFor="quantity">Quantity:</label>
-      <input
-        type="number"
-        id="quantity"
-        value={quantity}
-        onChange={(e) => setQuantity(parseInt(e.target.value))}
-        min="1"
-      />
-      <button className="addToCart" onClick={handleAddToCart}>Add to Cart</button>
+    <div className="singleItem-container">
+        <div className="singleItem">
+            <img src={product.image} alt={product.title} />
+            <h2>{product.title}</h2>
+            <p>Description: {product.description}</p>
+            <p>Price: ${product.price.toFixed(2)}</p>
+            <label htmlFor="quantity">Quantity:</label>
+            <input
+            type="number"
+            id="quantity"
+            value={quantity}
+            onChange={(e) => setQuantity(parseInt(e.target.value))}
+            min="1"
+            />
+            <button className="addToCart" onClick={handleAddToCart}>Add to Cart</button>
+        </div>
     </div>
   );
 }
