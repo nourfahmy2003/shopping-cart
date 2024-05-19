@@ -1,0 +1,45 @@
+.singleItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .singleItem img {
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .singleItem h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .singleItem p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .singleItem label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .singleItem input {
+    padding: 5px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    width: 60px;
+  }
+  
+  .addToCart {
+    background-color: #28a745;
+    color: #fff;
+  }
+  

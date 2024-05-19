@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import { Outlet } from "react-router-dom";
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 import NavBar from './components/Navbar';
+import { CartProvider } from './components/CartContext';
 
 export default function App() {
-  const [cartItem, addToCart] = useState({});
   return (
-    <>
-      <NavBar cartItem={cartItem}></NavBar>
-      <Outlet context={[cartItem, addToCart]}></Outlet>
-    </>
+    <CartProvider>
+      <NavBar />
+      <Outlet />
+    </CartProvider>
   );
 }

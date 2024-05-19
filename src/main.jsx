@@ -7,6 +7,8 @@ import HomePage from './components/HomePage.jsx';
 import MensPage from './components/Mensclothing.jsx';
 import WomensPage from './components/Womensclothing.jsx';
 import JeweleryPage from './components/Jewelery.jsx';
+import SingleItem from './components/SingleItems.jsx';
+import Cart from './components/Cart.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,8 @@ const router = createBrowserRouter([
       { path: "mens", element: <MensPage /> },
       { path: "womens", element: <WomensPage /> },
       { path: "jewelery", element: <JeweleryPage /> },
+      { path: "singleItem/:productId", element: <SingleItem /> },
+      { path: "cart", element: <Cart /> },
     ],
   },
 ]);

@@ -1,0 +1,98 @@
+
+
+.navBar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+  
+  .navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .navBar li {
+    padding: 14px 20px;
+  }
+  
+  .navBar li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+  }
+  
+  .navBar li a:hover {
+    background-color: #575757;
+    color: white;
+  }
+  
+  .cart-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    margin-left: auto; 
+  }
+  
+  .cart-button span {
+    background-color: #ff0000;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+  
+  .cart-button svg {
+    font-size: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .navBar ul {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+    }
+  
+    .navBar ul.active {
+      display: flex;
+    }
+  
+    .navBar li {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .navBar .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+  }
+  
+  body {
+    padding-top: 60px; 
+  }
+  
